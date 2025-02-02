@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>安居樂YA</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- 引入 LIFF SDK -->
+    <script src="https://static.line-scdn.net/liff/edge/2.1/sdk.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>安居樂YA</h1>
+        <div class="tabs">
+            <button class="tab-btn active" data-tab="registration">報名資訊</button>
+            <button class="tab-btn" data-tab="registered">已報名者</button>
+        </div>
+
+        <!-- 已報名人數 顯示在 tabs 下方 -->
+        <div id="registered-info">
+            <h2>已報名人數 (<span id="count">0</span>/20)</h2>
+        </div>
+
+        <div id="registration" class="tab-content active">
+            <form id="register-form">
+                <label for="name">姓名 *</label>
+                <input type="text" id="name" name="name" required placeholder="whonext 2">
+                
+                <label for="note">備註</label>
+                <input type="text" id="note" name="note" placeholder="備註，例如:我只跟我的朋友報名。">
+                
+                <button type="submit" id="register-btn">我要報名</button>
+                <p id="status-message"></p>
+            </form>
+            <div class="event-info">
+                <p><strong>時間：</strong>2025年2月22日 2:22</p>
+                <p><strong>場地：</strong>華美西街</p>
+                <p><strong>費用：</strong>早鳥價???TWD 一般價 999TWD</p>
+            </div>
+        </div>
+        
+        <div id="registered" class="tab-content">
+            <ul id="registered-list"></ul>
+        </div>
+    </div>
+    
+    <!-- 加載腳本 -->
+    <script defer src="script.js"></script>
+</body>
+</html>
