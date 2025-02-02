@@ -1,10 +1,10 @@
 /* 基本樣式 */
 body {
     font-family: Arial, sans-serif;
-    background-color: #F9F9F9; /* 淺灰色背景 */
+    background-color: #D7FFF1; /* 淺綠色背景 */
     margin: 0;
     padding: 0;
-    color: #333;
+    color: #285943; /* 深綠色 */
 }
 
 /* 容器 */
@@ -21,7 +21,7 @@ body {
 h1 {
     text-align: center;
     font-size: 2.5em;
-    color: #658761; /* 淡綠色 */
+    color: #77AF9C; /* 稍暗的綠色 */
 }
 
 /* 標籤頁 */
@@ -34,9 +34,9 @@ h1 {
 .tab-btn {
     padding: 10px 20px;
     margin: 0 10px;
-    border: 2px solid #AC5045; /* 暗紅色 */
+    border: 2px solid #8CD790; /* 明亮綠色 */
     background-color: transparent;
-    color: #AC5045; /* 暗紅色 */
+    color: #8CD790; /* 明亮綠色 */
     font-size: 1.1em;
     cursor: pointer;
     border-radius: 5px;
@@ -44,12 +44,12 @@ h1 {
 }
 
 .tab-btn.active {
-    background-color: #AC5045; /* 暗紅色 */
+    background-color: #8CD790; /* 明亮綠色 */
     color: white;
 }
 
 .tab-btn:hover {
-    background-color: #DF05D; /* 浅紫紅色 */
+    background-color: #77AF9C; /* 稍暗綠色 */
     color: white;
 }
 
@@ -81,13 +81,13 @@ form input {
 }
 
 form input:focus {
-    border-color: #658761; /* 淡綠色 */
+    border-color: #77AF9C; /* 稍暗綠色 */
     outline: none;
 }
 
 /* 按鈕 */
 button {
-    background-color: #AC5045; /* 暗紅色 */
+    background-color: #8CD790; /* 明亮綠色 */
     color: white;
     padding: 10px 20px;
     border: none;
@@ -98,7 +98,7 @@ button {
 }
 
 button:hover {
-    background-color: #DF05D; /* 浅紫紅色 */
+    background-color: #77AF9C; /* 稍暗綠色 */
 }
 
 /* 已報名者 */
@@ -109,7 +109,7 @@ button:hover {
 
 #count {
     font-weight: bold;
-    color: #658761; /* 淡綠色 */
+    color: #77AF9C; /* 稍暗綠色 */
 }
 
 /* 報名資訊 */
@@ -137,7 +137,7 @@ button:hover {
 
 /* 取消報名按鈕 */
 .cancel-btn {
-    background-color: #DF05D; /* 浅紫紅色 */
+    background-color: #285943; /* 深綠色 */
     color: white;
     padding: 5px 10px;
     font-size: 0.9em;
@@ -148,5 +148,5 @@ button:hover {
 }
 
 .cancel-btn:hover {
-    background-color: #AC5045; /* 暗紅色 */
+    background-color: #77AF9C; /* 稍暗綠色 */
 }
