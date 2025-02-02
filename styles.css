@@ -122,7 +122,7 @@ button:hover {
 
 /* 取消報名按鈕 */
 .cancel-btn {
-    background: #FF4E50;
+    background: #D45D5D;
     color: white;
     padding: 6px 15px;
     border: none;
@@ -132,6 +132,6 @@ button:hover {
 }
 
 .cancel-btn:hover {
-    background: #FF6E80;
+    background: #E56B6B;
     transform: scale(1.05);
 }
