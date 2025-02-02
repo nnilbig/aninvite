@@ -1,7 +1,7 @@
 /* 全局設定 */
 body {
-    background-color: #1A1B41; /* 深藍紫色，突顯霓虹色彩 */
-    color: #FFF;
+    background-color: #0D0F1B; /* 深藍黑，模擬宇宙 */
+    color: #E0E7FF;
     font-family: 'Poppins', sans-serif;
     text-align: center;
 }
@@ -11,10 +11,10 @@ body {
     max-width: 600px;
     margin: auto;
     padding: 20px;
-    background: rgba(255, 255, 255, 0.1); /* 透明感 */
+    background: rgba(20, 22, 40, 0.8); /* 深色半透明 */
     border-radius: 15px;
-    backdrop-filter: blur(10px);
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 0 25px rgba(93, 188, 252, 0.3); /* 星際藍光暈 */
 }
 
 /* Tabs 設計 */
@@ -25,8 +25,8 @@ body {
 }
 
 .tab-btn {
-    background: linear-gradient(45deg, #FFCF56, #FF6B6B); /* 霓虹黃 + 霓虹紅 */
-    color: #1A1B41;
+    background: linear-gradient(135deg, #2E2A5F, #5D3FD3); /* 深藍紫到電光藍 */
+    color: #E0E7FF;
     padding: 12px 20px;
     border: none;
     border-radius: 12px;
@@ -36,7 +36,7 @@ body {
 }
 
 .tab-btn.active {
-    background: linear-gradient(45deg, #6BCB77, #4D96FF); /* 霓虹綠 + 湖水藍 */
+    background: linear-gradient(135deg, #5D3FD3, #6C8CFF); /* 激活時亮一點 */
     color: #fff;
     transform: scale(1.05);
 }
@@ -59,40 +59,35 @@ form {
     display: flex;
     flex-direction: column;
     gap: 12px;
-    background: rgba(255, 255, 255, 0.15); /* 透明的白色區塊 */
+    background: rgba(40, 44, 72, 0.7); /* 更深的透明感 */
     padding: 20px;
     border-radius: 12px;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 20px rgba(120, 144, 255, 0.4);
 }
 
-input, button {
-    padding: 12px;
-    border: none;
-    border-radius: 8px;
-    font-size: 16px;
-    outline: none;
-}
-
+/* 輸入框 */
 input {
-    background: rgba(255, 255, 255, 0.2);
-    color: #FFF;
-    border: 2px solid #FFCF56;
-    box-shadow: 0 0 10px rgba(255, 207, 86, 0.5);
+    background: rgba(45, 50, 80, 0.9);
+    color: #E0E7FF;
+    padding: 12px;
+    border: 2px solid #5D3FD3;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(93, 63, 211, 0.5);
     text-align: center;
 }
 
 input::placeholder {
-    color: rgba(255, 255, 255, 0.6);
+    color: rgba(255, 255, 255, 0.5);
 }
 
 input:focus {
-    border-color: #FF6B6B;
-    box-shadow: 0 0 15px rgba(255, 107, 107, 0.8);
+    border-color: #6C8CFF;
+    box-shadow: 0 0 15px rgba(120, 144, 255, 0.8);
 }
 
 /* 按鈕 */
 button {
-    background: linear-gradient(45deg, #FF6B6B, #4D96FF);
+    background: linear-gradient(135deg, #5D3FD3, #6C8CFF);
     color: white;
     font-weight: bold;
     cursor: pointer;
@@ -100,7 +95,7 @@ button {
 }
 
 button:hover {
-    background: linear-gradient(45deg, #FFCF56, #6BCB77);
+    background: linear-gradient(135deg, #6C8CFF, #93A8FF);
     transform: scale(1.05);
 }
 
@@ -111,29 +106,28 @@ button:hover {
 }
 
 #registered-list li {
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(45, 50, 80, 0.8);
     margin: 6px 0;
     padding: 12px;
     border-radius: 10px;
     display: flex;
-    justify-content: space-between; /* 讓內容和按鈕保持水平對齊 */
+    justify-content: space-between;
     align-items: center;
-    box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
-    border-left: 5px solid #FFCF56; /* 霓虹黃色標記 */
+    box-shadow: 0 0 10px rgba(93, 188, 252, 0.3);
+    border-left: 5px solid #5D3FD3;
 }
 
 /* 取消報名按鈕 */
 .cancel-btn {
-    background: #FF6B6B;
+    background: #E94560;
     color: white;
-    padding: 5px 10px;
+     padding: 5px 10px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
 
 .cancel-btn:hover {
-    background: #FFCF56;
-    color: #1A1B41;
+    background: #FF5A80;
     transform: scale(1.05);
 }
