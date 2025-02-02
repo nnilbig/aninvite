@@ -140,6 +140,7 @@ button:hover {
     transform: scale(1.05);
 }
 
+
 /* 響應式設計 */
 @media (max-width: 768px) {
     .container {
