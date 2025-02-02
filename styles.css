@@ -1,149 +1,103 @@
-/* 基本樣式 */
 body {
-    background: #121212; /* 深灰色背景 */
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-    color: #F7F7F7; /* 白色文字 */
-}
-
-/* 整個容器 */
-.container {
-    max-width: 1200px;
-    margin: 40px auto;
-    padding: 30px;
-    background: #1E1E1E; /* 深灰色背景，與標題和主體區域搭配 */
-    border-radius: 20px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-}
-
-/* 標題設計 */
-h1 {
-    font-size: 2.8em;
-    color: #DF05D;  /* 鮮豔的粉紅色，來自插畫的顏色 */
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
     text-align: center;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+}
+
+.tabs {
+    display: flex;
+    justify-content: space-around;
     margin-bottom: 20px;
 }
 
-/* 按鈕設計 */
-button {
-    background: linear-gradient(135deg, #DF05D 10%, #AC5045);  /* 漸變效果 */
-    border: none;
-    color: #FFF;
-    font-size: 1.1em;
-    padding: 12px 30px;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: transform 0.3s ease, background-color 0.3s ease;
-}
-
-button:hover {
-    transform: scale(1.1);
-    background-color: #8cd790;  /* 應用變換效果後的顏色 */
-}
-
-/* Tab 栏設計 */
-.tabs {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 30px;
-}
-
 .tab-btn {
-    background-color: transparent;
-    border: 2px solid #DF05D;
-    color: #DF05D;
-    padding: 10px 25px;
-    font-size: 1.2em;
+    background: #222;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
     cursor: pointer;
-    border-radius: 30px;
-    margin: 0 12px;
-    transition: all 0.3s ease;
+    transition: 0.3s;
 }
 
 .tab-btn.active {
-    background-color: #DF05D;
-    color: #fff;
+    background: #444;
 }
 
-/* 表單設計 */
-#register-form {
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+form {
     display: flex;
     flex-direction: column;
-    gap: 20px;
-}
-
-#register-form input {
-    padding: 12px;
-    font-size: 1.1em;
-    border: 2px solid #658761;  /* 柔和的綠色邊框 */
+    gap: 10px;
+    background: #111;
+    padding: 20px;
     border-radius: 10px;
-    background: #2A2A2A; /* 深灰色背景 */
-    color: #F7F7F7; /* 白色文字 */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
 
-#register-form input:focus {
-    border-color: #DF05D;  /* 聚焦時顏色變為粉紅色 */
-    background-color: #333333; /* 聚焦時背景變深 */
+input, button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
 }
 
-/* 提示信息 */
-#status-message {
-    color: #AC5045;  /* 柔和的紅色 */
-    font-size: 1.2em;
-    text-align: center;
-    margin-top: 20px;
+input {
+    background: #222;
+    color: #fff;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
 }
 
-/* 已報名者區域 */
+input:focus {
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+}
+
+button {
+    background: #444;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #666;
+}
+
 #registered-list {
-    list-style-type: none;
+    list-style: none;
     padding: 0;
 }
 
 #registered-list li {
-    background: #658761;  /* 綠色背景 */
-    padding: 15px;
-    margin-bottom: 12px;
-    border-radius: 12px;
-    color: #FFF;
+    background: #222;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
 }
 
 .cancel-btn {
-    background-color: #AC5045;  /* 紅色取消按鈕 */
+    background: #FF6F61;
     color: white;
+    padding: 5px 10px;
     border: none;
-    padding: 8px 18px;
-    border-radius: 8px;
+    border-radius: 5px;
     cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.cancel-btn:hover {
-    background-color: #8cd790;  /* 當按鈕懸停時變成淺綠色 */
-    transform: scale(1.1);
-}
-
-/* 響應式設計 */
-@media (max-width: 768px) {
-    .container {
-        padding: 15px;
-    }
-
-    h1 {
-        font-size: 2em;
-    }
-
-    button {
-        width: 100%;
-        padding: 12px;
-    }
-
-    .tab-btn {
-        font-size: 1em;
-        padding: 8px 15px;
-    }
 }
