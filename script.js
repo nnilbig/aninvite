@@ -3,6 +3,12 @@ const SHEET_ID = "1B_JkPWN5yPjAZgOGFT5zDxjQcDLAknSRfK4Nq6gHEtk";  // 你的 Goog
 const APP_SCRIPT_URL = "https://script.google.com/macros/s/AKfycby_SCcIXAvJVwUy4tJSBpmlIfFJkvcpplqRxKaaBD6BvwN7JUpBRM7E42CP1SFme-rB2Q/exec";  // 替換為你的 Google Apps Script URL
 
 document.addEventListener("DOMContentLoaded", async function () {
+    // 檢查 liff 是否加載成功
+    if (typeof liff === 'undefined') {
+        console.error("LIFF SDK 加載失敗");
+        return;
+    }
+
     // 初始化 LIFF 並使用 await
     try {
         await liff.init({ liffId: LIFF_ID });
