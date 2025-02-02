@@ -1,11 +1,9 @@
-/* 全局設定 */
+/* 霓虹藍紫背景 */
 body {
-    background-color: #0A0F1A; /* 深藍黑，營造宇宙感 */
-    color: #ffffff;
-    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #0A0F2B, #190A35); /* 深藍到紫 */
+    color: #fff;
+    font-family: Arial, sans-serif;
     text-align: center;
-    margin: 0;
-    padding: 0;
 }
 
 /* 容器 */
@@ -23,28 +21,22 @@ body {
 }
 
 .tab-btn {
-    background: linear-gradient(135deg, #1E90FF, #6D28ED); /* 霓虹藍紫 */
-    color: #ffffff;
-    padding: 12px 25px;
+    background: rgba(50, 50, 80, 0.8); /* 霧面藍紫 */
+    color: #fff;
+    padding: 10px 20px;
     border: none;
-    border-radius: 8px;
     cursor: pointer;
     transition: 0.3s;
-    box-shadow: 0 0 15px rgba(110, 88, 255, 0.5);
-    font-size: 18px;
-    font-weight: 600;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(80, 120, 255, 0.4); /* 藍色霓虹光 */
 }
 
 .tab-btn.active {
-    background: linear-gradient(135deg, #6D28ED, #A066FF); /* 亮紫 */
-    box-shadow: 0 0 20px rgba(160, 102, 255, 0.8);
+    background: rgba(90, 50, 150, 0.9);
+    box-shadow: 0 0 15px rgba(150, 80, 255, 0.7); /* 更強烈的藍紫霓虹 */
 }
 
-.tab-btn:hover {
-    filter: brightness(1.3);
-}
-
-/* 內容區 */
+/* Tab 內容區 */
 .tab-content {
     display: none;
 }
@@ -57,49 +49,44 @@ body {
 form {
     display: flex;
     flex-direction: column;
-    gap: 15px;
-    background: #12172B; /* 深藍色區塊 */
-    padding: 25px;
-    border-radius: 15px;
-    box-shadow: 0 0 20px rgba(93, 118, 255, 0.5); /* 藍紫光暈 */
+    gap: 10px;
+    background: rgba(20, 20, 40, 0.8); /* 霧面藍黑 */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(120, 80, 255, 0.6); /* 藍紫霓虹光 */
 }
 
 /* 輸入框 */
-input {
-    background: #1A2040;
-    color: #fff;
-    padding: 12px;
+input, button {
+    padding: 10px;
     border: none;
-    border-radius: 8px;
+    border-radius: 5px;
     font-size: 16px;
     outline: none;
-    box-shadow: 0 0 12px rgba(160, 102, 255, 0.4);
-    text-align: center;
 }
 
-input::placeholder {
-    color: rgba(255, 255, 255, 0.5);
+input {
+    background: rgba(30, 30, 60, 0.9); /* 霧面藍黑 */
+    color: #fff;
+    box-shadow: 0 0 10px rgba(120, 120, 255, 0.5); /* 淺藍霓虹光 */
 }
 
 input:focus {
-    box-shadow: 0 0 20px rgba(160, 102, 255, 0.8);
+    box-shadow: 0 0 15px rgba(180, 80, 255, 0.8); /* 更強的紫藍霓虹 */
 }
 
 /* 按鈕 */
 button {
-    background: linear-gradient(135deg, #6D28ED, #1E90FF);
-    color: white;
-    font-weight: bold;
+    background: linear-gradient(135deg, #402090, #8040D0); /* 紫藍漸變 */
+    color: #fff;
     cursor: pointer;
     transition: 0.3s;
-    border-radius: 8px;
-    padding: 12px 25px;
-    font-size: 18px;
+    box-shadow: 0 0 10px rgba(120, 80, 255, 0.5);
 }
 
 button:hover {
-    background: linear-gradient(135deg, #A066FF, #4DAFFF);
-    transform: scale(1.05);
+    background: linear-gradient(135deg, #6040D0, #A060F0); /* 變亮的霓虹紫 */
+    box-shadow: 0 0 15px rgba(180, 100, 255, 0.8);
 }
 
 /* 已報名名單 */
@@ -109,29 +96,28 @@ button:hover {
 }
 
 #registered-list li {
-    background: #12172B;
-    margin: 8px 0;
-    padding: 12px;
-    border-radius: 8px;
+    background: rgba(40, 30, 70, 0.9);
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 0 12px rgba(160, 102, 255, 0.3);
-    font-size: 16px;
+    box-shadow: 0 0 15px rgba(80, 120, 255, 0.6); /* 藍紫霓虹 */
 }
 
 /* 取消報名按鈕 */
 .cancel-btn {
-    background: #D45D5D;
+    background: linear-gradient(135deg, #3040A0, #6080FF); /* 深藍到亮藍 */
     color: white;
-    padding: 6px 15px;
+    padding: 5px 10px;
     border: none;
-    border-radius: 8px;
+    border-radius: 5px;
     cursor: pointer;
-    font-size: 14px;
+    box-shadow: 0 0 10px rgba(80, 120, 255, 0.6); /* 藍紫霓虹 */
 }
 
 .cancel-btn:hover {
-    background: #E56B6B;
-    transform: scale(1.05);
+    background: linear-gradient(135deg, #5060FF, #8090FF); /* 更亮的藍色 */
+    box-shadow: 0 0 15px rgba(120, 160, 255, 0.8);
 }
