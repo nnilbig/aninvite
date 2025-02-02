@@ -126,38 +126,14 @@ button:hover {
 .cancel-btn {
     background: #FF6B6B;
     color: white;
-    padding: 6px 12px;
+    padding: 5px 10px;
     border: none;
-    border-radius: 8px;
+    border-radius: 5px;
     cursor: pointer;
-    transition: 0.3s ease-in-out;
-    margin-left: auto; /* 讓按鈕靠右 */
 }
 
 .cancel-btn:hover {
     background: #FFCF56;
     color: #1A1B41;
     transform: scale(1.05);
-}
-
-
-/* 響應式設計 */
-@media (max-width: 768px) {
-    .container {
-        padding: 15px;
-    }
-
-    h1 {
-        font-size: 2em;
-    }
-
-    button {
-        width: 100%;
-        padding: 12px;
-    }
-
-    .tab-btn {
-        font-size: 1em;
-        padding: 10px;
-    }
 }
