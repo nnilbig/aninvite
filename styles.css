@@ -1,57 +1,62 @@
-/* 🕹️ 黑白像素風背景 */
+/* 🎮 Gameboy 風格字體 */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 body {
-    background: repeating-linear-gradient(90deg, #000 0px, #111 2px, #000 4px); /* CRT 掃描線效果 */
+    background: #2e2e2e; /* 深灰背景 */
     color: #fff;
-    font-family: "Press Start 2P", "VT323", monospace;
+    font-family: 'Press Start 2P', Arial, sans-serif; /* 像素字體 */
     text-align: center;
     text-transform: uppercase;
+    image-rendering: pixelated;
+    margin: 0;
+    padding: 0;
 }
 
-/* 🎮 像素風標題 */
+/* 🎮 Gameboy 風標題 */
 h1, h2, h3 {
-    font-family: "Press Start 2P", monospace;
-    text-shadow: 2px 2px 0px #333;
-    letter-spacing: 2px;
-    background: #000;
+    color: #fff;
+    background: #444; /* 灰色背景 */
     display: inline-block;
-    padding: 5px 10px;
-    border: 3px solid #fff;
+    padding: 10px;
+    border: 4px solid #fff; /* 白色邊框 */
+    margin: 15px auto;
+    font-size: 20px;
 }
 
-/* 📦 容器 */
+/* 📦 主容器 */
 .container {
-    max-width: 600px;
+    max-width: 320px; /* Gameboy 的解析度 */
     margin: auto;
-    padding: 20px;
-    border: 3px solid #fff;
-    background: #111;
+    padding: 15px;
+    border: 4px solid #fff;
+    background: #1e1e1e; /* 深灰 */
 }
 
-/* 🎚️ Tabs 設計 */
+/* 🎮 Tabs 設計 */
 .tabs {
     display: flex;
-    justify-content: space-around;
-    margin-bottom: 20px;
+    justify-content: space-between;
+    margin-bottom: 10px;
 }
 
 .tab-btn {
-    background: #222;
+    width: 50%;
+    background: #444; /* 深灰背景 */
     color: #fff;
-    padding: 10px 20px;
-    border: 3px solid #fff;
+    padding: 10px;
+    border: 4px solid #fff;
     cursor: pointer;
-    transition: 0.2s;
+    font-size: 14px;
     font-weight: bold;
-    font-family: "Press Start 2P", monospace;
+    text-align: center;
 }
 
 .tab-btn.active {
     background: #fff;
     color: #000;
-    border: 3px solid #000;
 }
 
-/* 📂 Tab 內容區 */
+/* 🔥 Tab 內容 */
 .tab-content {
     display: none;
 }
@@ -60,76 +65,69 @@ h1, h2, h3 {
     display: block;
 }
 
-/* ⌨️ 像素風表單 */
+/* ⚙️ 表單 */
 form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    background: #000;
-    padding: 20px;
-    border: 3px solid #fff;
+    background: #111; /* 更深的背景 */
+    padding: 15px;
+    border: 4px solid #fff;
 }
 
-/* 🖥️ 輸入框 */
+/* 🔩 輸入框 */
 input {
-    background: #222;
-    color: white;
+    background: #333; /* 深灰背景 */
+    color: #fff;
     padding: 10px;
-    border: 3px solid #fff;
-    font-family: "VT323", monospace;
-    font-size: 16px;
+    border: 4px solid #fff;
+    font-size: 14px;
+    width: 100%;
     text-align: center;
+    font-family: 'Press Start 2P';
+    box-sizing: border-box; /* 修正 box model 計算方式 */
 }
 
-input:focus {
-    border-color: #888;
-}
-
-/* 🎛️ 像素風按鈕 */
+/* 🎮 按鈕 */
 button {
-    background: #111;
-    color: white;
-    padding: 12px;
-    border: 3px solid #fff;
-    font-family: "Press Start 2P", monospace;
+    background: #444; /* 深灰背景 */
+    color: #fff;
+    padding: 10px;
+    border: 4px solid #fff;
     cursor: pointer;
-    transition: 0.2s;
+    font-size: 14px;
+    font-weight: bold;
 }
 
 button:hover {
     background: #fff;
     color: #000;
-    border: 3px solid #000;
 }
 
-/* 📜 已報名名單 */
+/* 🎮 已報名名單 */
 #registered-list {
     list-style: none;
     padding: 0;
 }
 
 #registered-list li {
-    background: #222;
+    background: #333; /* 深灰背景 */
     margin: 5px 0;
-    padding: 10px;
+    padding: 8px;
+    border: 4px solid #fff;
+    font-size: 14px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    border: 3px solid #fff;
 }
 
-/* ❌ 取消報名按鈕 */
+/* ⚔️ 取消報名按鈕 */
 .cancel-btn {
-    background: #000;
-    color: white;
-    padding: 5px 10px;
-    border: 3px solid #fff;
+    background: #444; /* 深灰背景 */
+    color: #fff;
+    padding: 6px;
+    border: 4px solid #fff;
+    font-size: 12px;
     cursor: pointer;
-    font-size: 14px;
 }
 
 .cancel-btn:hover {
     background: #fff;
     color: #000;
-    border: 3px solid #000;
 }
