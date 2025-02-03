@@ -1,17 +1,21 @@
-/* 🌑 深黑金屬背景 + 隱約磨砂紋理 */
+/* 🕹️ 黑白像素風背景 */
 body {
-    background: linear-gradient(135deg, #050505, #0D0D0D); /* 深黑金屬 */
+    background: repeating-linear-gradient(90deg, #000 0px, #111 2px, #000 4px); /* CRT 掃描線效果 */
     color: #fff;
-    font-family: "Orbitron", Arial, sans-serif;
+    font-family: "Press Start 2P", "VT323", monospace;
     text-align: center;
     text-transform: uppercase;
 }
 
-/* 🌟 重金屬風標題 */
+/* 🎮 像素風標題 */
 h1, h2, h3 {
-    font-family: "Metal Lord", "Orbitron", sans-serif; /* 金屬感字體 */
-    text-shadow: 0 0 10px rgba(255, 50, 50, 0.8); /* 暗紅光 */
+    font-family: "Press Start 2P", monospace;
+    text-shadow: 2px 2px 0px #333;
     letter-spacing: 2px;
+    background: #000;
+    display: inline-block;
+    padding: 5px 10px;
+    border: 3px solid #fff;
 }
 
 /* 📦 容器 */
@@ -19,9 +23,11 @@ h1, h2, h3 {
     max-width: 600px;
     margin: auto;
     padding: 20px;
+    border: 3px solid #fff;
+    background: #111;
 }
 
-/* ⚡ Tabs 設計 */
+/* 🎚️ Tabs 設計 */
 .tabs {
     display: flex;
     justify-content: space-around;
@@ -29,24 +35,23 @@ h1, h2, h3 {
 }
 
 .tab-btn {
-    background: rgba(20, 20, 20, 0.9); /* 霧黑 */
+    background: #222;
     color: #fff;
     padding: 10px 20px;
-    border: 2px solid rgba(180, 50, 50, 0.6); /* 暗紅鐵鏽感 */
+    border: 3px solid #fff;
     cursor: pointer;
-    transition: 0.3s;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(200, 50, 50, 0.5); /* 暗紅光 */
-    text-transform: uppercase;
+    transition: 0.2s;
     font-weight: bold;
+    font-family: "Press Start 2P", monospace;
 }
 
 .tab-btn.active {
-    background: rgba(50, 50, 50, 0.9);
-    box-shadow: 0 0 15px rgba(255, 50, 50, 0.8);
+    background: #fff;
+    color: #000;
+    border: 3px solid #000;
 }
 
-/* 🔥 Tab 內容區 */
+/* 📂 Tab 內容區 */
 .tab-content {
     display: none;
 }
@@ -55,90 +60,76 @@ h1, h2, h3 {
     display: block;
 }
 
-/* ⚙️ 表單 */
+/* ⌨️ 像素風表單 */
 form {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    background: rgba(10, 10, 10, 0.8); /* 低調金屬黑 */
+    background: #000;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(180, 50, 50, 0.4); /* 紅色熔岩光 */
-    border: 2px solid rgba(200, 50, 50, 0.6);
+    border: 3px solid #fff;
 }
 
-/* 🔩 輸入框 */
+/* 🖥️ 輸入框 */
 input {
-    background: rgba(30, 30, 30, 0.9);
-    color: #fff;
-    padding: 12px;
-    border-radius: 5px;
+    background: #222;
+    color: white;
+    padding: 10px;
+    border: 3px solid #fff;
+    font-family: "VT323", monospace;
     font-size: 16px;
-    outline: none;
-    border: 2px solid rgba(180, 50, 50, 0.7);
-    box-shadow: 0 0 10px rgba(180, 50, 50, 0.5);
     text-align: center;
 }
 
 input:focus {
-    box-shadow: 0 0 15px rgba(255, 50, 50, 0.8);
-    border-color: rgba(255, 50, 50, 1);
+    border-color: #888;
 }
 
-/* 🩸 霓虹重金屬按鈕 */
+/* 🎛️ 像素風按鈕 */
 button {
-    background: linear-gradient(135deg, #111, #222);
-    color: #fff;
-    cursor: pointer;
+    background: #111;
+    color: white;
     padding: 12px;
-    border: 2px solid rgba(180, 50, 50, 0.7);
-    border-radius: 5px;
-    transition: 0.3s;
-    font-size: 16px;
-    box-shadow: 0 0 10px rgba(200, 50, 50, 0.5);
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-weight: bold;
+    border: 3px solid #fff;
+    font-family: "Press Start 2P", monospace;
+    cursor: pointer;
+    transition: 0.2s;
 }
 
 button:hover {
-    background: linear-gradient(135deg, #400000, #800000); /* 熔岩紅 */
-    box-shadow: 0 0 15px rgba(255, 50, 50, 1);
+    background: #fff;
+    color: #000;
+    border: 3px solid #000;
 }
 
-/* ⚔️ 已報名名單 */
+/* 📜 已報名名單 */
 #registered-list {
     list-style: none;
     padding: 0;
 }
 
 #registered-list li {
-    background: rgba(20, 20, 20, 0.8);
+    background: #222;
     margin: 5px 0;
-    padding: 8px 12px; /* 縮小一點高度 */
-    border-radius: 5px;
+    padding: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 0 10px rgba(180, 50, 50, 0.4);
-    border: 2px solid rgba(200, 50, 50, 0.6);
+    border: 3px solid #fff;
 }
 
-/* ⚡ 取消報名按鈕（熔岩金屬風格） */
+/* ❌ 取消報名按鈕 */
 .cancel-btn {
-    background: linear-gradient(135deg, #1A0000, #3D0000); /* 暗紅金屬 */
-    color: orange;
+    background: #000;
+    color: white;
     padding: 5px 10px;
-    border: 2px solid orange;
-    border-radius: 5px;
+    border: 3px solid #fff;
     cursor: pointer;
-    transition: 0.3s;
-    box-shadow: 0 0 10px rgba(255, 100, 0, 0.5);
     font-size: 14px;
-    text-transform: uppercase;
 }
 
 .cancel-btn:hover {
-    background: linear-gradient(135deg, #500000, #900000); /* 熔岩光 */
-    box-shadow: 0 0 15px rgba(255, 120, 0, 0.8);
+    background: #fff;
+    color: #000;
+    border: 3px solid #000;
 }
