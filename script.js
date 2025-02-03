@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", async function () {
             countSpan.textContent = data.length;
             data.forEach((user, index) => {
                 let li = document.createElement("li");
-                li.innerHTML = `${index + 1}. ${user.name} <button class='cancel-btn' data-name='${user.name}'>取消</button>`;
+                li.innerHTML = `${index + 1}. ${user.name} <button class='cancel-btn' data-name='${user.name}'>CANCEL</button>`;
                 registeredList.appendChild(li);
             });
         } catch (error) {
@@ -57,10 +57,10 @@ document.addEventListener("DOMContentLoaded", async function () {
         const name = document.getElementById("name").value.trim();
         const note = document.getElementById("note").value.trim();
         if (!name) {
-            statusMessage.textContent = "請輸入姓名！";
+            statusMessage.textContent = "ENTER YOUR NAME!";
             return;
         }
-        statusMessage.textContent = "小助手協助中...";
+        statusMessage.textContent = "CHECK...";
         try {
             let response = await fetch(`${APP_SCRIPT_URL}?action=register&name=${encodeURIComponent(name)}&note=${encodeURIComponent(note)}`);
             let result = await response.json();
@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", async function () {
             fetchRegisteredUsers();
         } catch (error) {
             console.error("Registration failed:", error);
-            statusMessage.textContent = "報名失敗，請稍後再試！";
+            statusMessage.textContent = "404，TRY AGAIN LATER！";
         }
     });
 
