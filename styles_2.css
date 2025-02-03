@@ -1,0 +1,134 @@
+/* 🎮 Cyberpunk x TRON x Arcade 風格 */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+    background: #0A0A0A;
+    color: #00FFFF;
+    font-family: 'Press Start 2P', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    image-rendering: pixelated;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+/* 🎮 霓虹標題 */
+h1 {
+    color: #FF007F;
+    text-shadow: 0 0 10px #FF007F, 0 0 20px #FF007F;
+    padding: 15px;
+    border: 4px solid #FF007F;
+    display: inline-block;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+/* 📦 主要容器 */
+.container {
+    max-width: 350px;
+    margin: auto;
+    padding: 20px;
+    border: 4px solid #00FFFF;
+    background: rgba(10, 10, 10, 0.95);
+    box-shadow: 0 0 15px #00FFFF;
+}
+
+/* 🎮 Tabs 設計 */
+.tabs {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.tab-btn {
+    width: 50%;
+    background: #111;
+    color: #00FFFF;
+    padding: 12px;
+    border: 3px solid #FF007F;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 0 0 10px #00FFFF;
+}
+
+.tab-btn.active {
+    background: #FF007F;
+    color: #000;
+}
+
+/* ⚙️ 表單 */
+form {
+    background: #222;
+    padding: 20px;
+    border: 3px solid #00FFFF;
+    box-shadow: 0 0 10px #00FFFF;
+}
+
+/* 🔩 輸入框 */
+input {
+    background: #111;
+    color: #00FFFF;
+    padding: 12px;
+    border: 3px solid #FF007F;
+    font-size: 14px;
+    width: 100%;
+    text-align: center;
+    font-family: 'Press Start 2P';
+    box-sizing: border-box;
+}
+
+/* 🎮 霓虹按鈕 */
+button {
+    background: #FF007F;
+    color: #000;
+    padding: 12px;
+    border: 3px solid #00FFFF;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    text-shadow: 0 0 10px #00FFFF;
+    box-shadow: 0 0 15px #FF007F;
+}
+
+button:hover {
+    background: #00FFFF;
+    color: #000;
+    box-shadow: 0 0 15px #00FFFF;
+}
+
+/* 🎮 已報名名單 */
+#registered-list {
+    list-style: none;
+    padding: 0;
+    border-radius: 5px;
+    border: 3px solid #00FFFF;
+    box-shadow: 0 0 10px #00FFFF;
+}
+
+#registered-list li {
+    background: #111;
+    margin: 5px 0;
+    padding: 10px;
+    border: 3px solid #FF007F;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ⚔️ 取消報名按鈕 */
+.cancel-btn {
+    background: #00FFFF;
+    color: #000;
+    padding: 6px;
+    border: 3px solid #FF007F;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.cancel-btn:hover {
+    background: #FF007F;
+    color: #000;
+    box-shadow: 0 0 10px #FF007F;
+}
