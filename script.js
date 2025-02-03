@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", async function () {
             countSpan.textContent = data.length;
             data.forEach((user, index) => {
                 let li = document.createElement("li");
-                li.innerHTML = `${index + 1}. ${user.name} <button class='cancel-btn' data-name='${user.name}'>取消報名</button>`;
+                li.innerHTML = `${index + 1}. ${user.name} <button class='cancel-btn' data-name='${user.name}'>取消</button>`;
                 registeredList.appendChild(li);
             });
         } catch (error) {
