@@ -1,19 +1,27 @@
-/* 霓虹藍紫背景 */
+/* 🌑 深黑金屬背景 + 隱約磨砂紋理 */
 body {
-    background: linear-gradient(135deg, #0A0F2B, #190A35); /* 深藍到紫 */
+    background: linear-gradient(135deg, #050505, #0D0D0D); /* 深黑金屬 */
     color: #fff;
-    font-family: Arial, sans-serif;
+    font-family: "Orbitron", Arial, sans-serif;
     text-align: center;
+    text-transform: uppercase;
 }
 
-/* 容器 */
+/* 🌟 重金屬風標題 */
+h1, h2, h3 {
+    font-family: "Metal Lord", "Orbitron", sans-serif; /* 金屬感字體 */
+    text-shadow: 0 0 10px rgba(255, 50, 50, 0.8); /* 暗紅光 */
+    letter-spacing: 2px;
+}
+
+/* 📦 容器 */
 .container {
     max-width: 600px;
     margin: auto;
     padding: 20px;
 }
 
-/* Tabs 設計 */
+/* ⚡ Tabs 設計 */
 .tabs {
     display: flex;
     justify-content: space-around;
@@ -21,22 +29,24 @@ body {
 }
 
 .tab-btn {
-    background: rgba(50, 50, 80, 0.8); /* 霧面藍紫 */
+    background: rgba(20, 20, 20, 0.9); /* 霧黑 */
     color: #fff;
     padding: 10px 20px;
-    border: none;
+    border: 2px solid rgba(180, 50, 50, 0.6); /* 暗紅鐵鏽感 */
     cursor: pointer;
     transition: 0.3s;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(80, 120, 255, 0.4); /* 藍色霓虹光 */
+    box-shadow: 0 0 10px rgba(200, 50, 50, 0.5); /* 暗紅光 */
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 .tab-btn.active {
-    background: rgba(90, 50, 150, 0.9);
-    box-shadow: 0 0 15px rgba(150, 80, 255, 0.7); /* 更強烈的藍紫霓虹 */
+    background: rgba(50, 50, 50, 0.9);
+    box-shadow: 0 0 15px rgba(255, 50, 50, 0.8);
 }
 
-/* Tab 內容區 */
+/* 🔥 Tab 內容區 */
 .tab-content {
     display: none;
 }
@@ -45,79 +55,90 @@ body {
     display: block;
 }
 
-/* 表單 */
+/* ⚙️ 表單 */
 form {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    background: rgba(20, 20, 40, 0.8); /* 霧面藍黑 */
+    background: rgba(10, 10, 10, 0.8); /* 低調金屬黑 */
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 15px rgba(120, 80, 255, 0.6); /* 藍紫霓虹光 */
+    box-shadow: 0 0 10px rgba(180, 50, 50, 0.4); /* 紅色熔岩光 */
+    border: 2px solid rgba(200, 50, 50, 0.6);
 }
 
-/* 輸入框 */
-input, button {
-    padding: 10px;
-    border: none;
+/* 🔩 輸入框 */
+input {
+    background: rgba(30, 30, 30, 0.9);
+    color: #fff;
+    padding: 12px;
     border-radius: 5px;
     font-size: 16px;
     outline: none;
-}
-
-input {
-    background: rgba(30, 30, 60, 0.9); /* 霧面藍黑 */
-    color: #fff;
-    box-shadow: 0 0 10px rgba(120, 120, 255, 0.5); /* 淺藍霓虹光 */
+    border: 2px solid rgba(180, 50, 50, 0.7);
+    box-shadow: 0 0 10px rgba(180, 50, 50, 0.5);
+    text-align: center;
 }
 
 input:focus {
-    box-shadow: 0 0 15px rgba(180, 80, 255, 0.8); /* 更強的紫藍霓虹 */
+    box-shadow: 0 0 15px rgba(255, 50, 50, 0.8);
+    border-color: rgba(255, 50, 50, 1);
 }
 
-/* 按鈕 */
+/* 🩸 霓虹重金屬按鈕 */
 button {
-    background: linear-gradient(135deg, #402090, #8040D0); /* 紫藍漸變 */
+    background: linear-gradient(135deg, #111, #222);
     color: #fff;
     cursor: pointer;
+    padding: 12px;
+    border: 2px solid rgba(180, 50, 50, 0.7);
+    border-radius: 5px;
     transition: 0.3s;
-    box-shadow: 0 0 10px rgba(120, 80, 255, 0.5);
+    font-size: 16px;
+    box-shadow: 0 0 10px rgba(200, 50, 50, 0.5);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
 }
 
 button:hover {
-    background: linear-gradient(135deg, #6040D0, #A060F0); /* 變亮的霓虹紫 */
-    box-shadow: 0 0 15px rgba(180, 100, 255, 0.8);
+    background: linear-gradient(135deg, #400000, #800000); /* 熔岩紅 */
+    box-shadow: 0 0 15px rgba(255, 50, 50, 1);
 }
 
-/* 已報名名單 */
+/* ⚔️ 已報名名單 */
 #registered-list {
     list-style: none;
     padding: 0;
 }
 
 #registered-list li {
-    background: rgba(40, 30, 70, 0.9);
+    background: rgba(20, 20, 20, 0.8);
     margin: 5px 0;
-    padding: 10px;
+    padding: 8px 12px; /* 縮小一點高度 */
     border-radius: 5px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 0 15px rgba(80, 120, 255, 0.6); /* 藍紫霓虹 */
+    box-shadow: 0 0 10px rgba(180, 50, 50, 0.4);
+    border: 2px solid rgba(200, 50, 50, 0.6);
 }
 
-/* 取消報名按鈕 */
+/* ⚡ 取消報名按鈕（熔岩金屬風格） */
 .cancel-btn {
-    background: linear-gradient(135deg, #3040A0, #6080FF); /* 深藍到亮藍 */
-    color: white;
+    background: linear-gradient(135deg, #1A0000, #3D0000); /* 暗紅金屬 */
+    color: orange;
     padding: 5px 10px;
-    border: none;
+    border: 2px solid orange;
     border-radius: 5px;
     cursor: pointer;
-    box-shadow: 0 0 10px rgba(80, 120, 255, 0.6); /* 藍紫霓虹 */
+    transition: 0.3s;
+    box-shadow: 0 0 10px rgba(255, 100, 0, 0.5);
+    font-size: 14px;
+    text-transform: uppercase;
 }
 
 .cancel-btn:hover {
-    background: linear-gradient(135deg, #5060FF, #8090FF); /* 更亮的藍色 */
-    box-shadow: 0 0 15px rgba(120, 160, 255, 0.8);
+    background: linear-gradient(135deg, #500000, #900000); /* 熔岩光 */
+    box-shadow: 0 0 15px rgba(255, 120, 0, 0.8);
 }
