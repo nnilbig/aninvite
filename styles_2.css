@@ -38,6 +38,8 @@ h1 {
     display: flex;
     justify-content: space-between;
     margin-bottom: 15px;
+    padding: 0;
+    border-bottom: 2px solid #00FFFF; /* 增加分隔线 */
 }
 
 .tab-btn {
@@ -51,11 +53,28 @@ h1 {
     font-weight: bold;
     text-align: center;
     text-shadow: 0 0 10px #00FFFF;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 4px 4px 0 0; /* 上边缘圆角 */
 }
 
 .tab-btn.active {
     background: #FF007F;
     color: #000;
+}
+
+/* 🎮 Tab 按钮的 hover 效果 */
+.tab-btn:hover {
+    background: #00FFFF;
+    color: #000;
+}
+
+/* 🎮 Tab 内容区域样式 */
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
 }
 
 /* ⚙️ 表單 */
@@ -77,6 +96,13 @@ input {
     text-align: center;
     font-family: 'Press Start 2P';
     box-sizing: border-box;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+input:focus {
+    background: #00FFFF;
+    border-color: #FF007F;
+    color: #000;
 }
 
 /* 🎮 霓虹按鈕 */
@@ -91,6 +117,7 @@ button {
     font-weight: bold;
     text-shadow: 0 0 10px #00FFFF;
     box-shadow: 0 0 15px #FF007F;
+    transition: background-color 0.3s, box-shadow 0.3s;
 }
 
 button:hover {
@@ -103,9 +130,8 @@ button:hover {
 #registered-list {
     list-style: none;
     padding: 0;
-    border-radius: 5px;
-    border: 3px solid #00FFFF;
     box-shadow: 0 0 10px #00FFFF;
+    margin-top: 20px;
 }
 
 #registered-list li {
@@ -116,6 +142,7 @@ button:hover {
     font-size: 14px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 /* ⚔️ 取消報名按鈕 */
@@ -126,6 +153,7 @@ button:hover {
     border: 3px solid #FF007F;
     font-size: 12px;
     cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
 }
 
 .cancel-btn:hover {
