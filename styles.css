@@ -1,10 +1,10 @@
 /* 🎮 Gameboy 風格字體 */
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Minecraftia&display=swap');
 
 body {
-    background: #2e2e2e; /* 深灰背景 */
+    background: #1B1B1B; /* Gameboy 黑色背景 */
     color: #fff;
-    font-family: 'Press Start 2P', Arial, sans-serif; /* 像素字體 */
+    font-family: 'Minecraftia', 'Press Start 2P', Arial, sans-serif; /* 使用 Minecraftia 字體 */
     text-align: center;
     text-transform: uppercase;
     image-rendering: pixelated;
@@ -29,7 +29,7 @@ h1, h2, h3 {
     margin: auto;
     padding: 15px;
     border: 4px solid #fff;
-    background: #1e1e1e; /* 深灰 */
+    background: #2A2A2A; /* 中灰色背景 */
 }
 
 /* 🎮 Tabs 設計 */
@@ -81,7 +81,7 @@ input {
     font-size: 14px;
     width: 100%;
     text-align: center;
-    font-family: 'Press Start 2P';
+    font-family: 'Minecraftia', 'Press Start 2P'; /* 使用 Minecraftia 字體 */
     box-sizing: border-box; /* 修正 box model 計算方式 */
 }
 
