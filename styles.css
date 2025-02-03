@@ -20,7 +20,7 @@ h1, h2, h3 {
     padding: 10px;
     border: 4px solid #B85331; /* 復古橘紅 */
     margin: 15px auto;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 /* 📦 主容器 */
@@ -92,6 +92,7 @@ button {
     padding: 10px;
     border: 4px solid #FDD400; /* 復古黃 */
     cursor: pointer;
+    font-family: 'Minecraftia', 'Press Start 2P';
     font-size: 14px;
     font-weight: bold;
 }
