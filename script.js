@@ -41,10 +41,10 @@ document.addEventListener("DOMContentLoaded", async function () {
     function hideLoading() {
         document.getElementById('loading-overlay').classList.remove('active');
     }
-
+    
+    showLoading();
     // 🎮 獲取已報名者的函數
     async function fetchRegisteredUsers() {
-        showLoading();
         try {
             let response = await fetch(`${APP_SCRIPT_URL}?action=get`);
             let data = await response.json();
