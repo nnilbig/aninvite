@@ -12,7 +12,7 @@ body {
     padding: 0;
     overflow: hidden;
     background-size: 400% 400%; /* 讓背景更動態 */
-    animation: gradientMove 5s ease infinite; /* 背景動畫 */
+    animation: gradientMove 10s ease infinite; /* 背景動畫 */
 }
 
 /* 漸變背景動畫 */
