@@ -42,7 +42,6 @@ document.addEventListener("DOMContentLoaded", async function () {
         document.getElementById('loading-overlay').classList.remove('active');
     }
     
-    showLoading();
     // 🎮 獲取已報名者的函數
     async function fetchRegisteredUsers() {
         try {
