@@ -23,7 +23,8 @@ body {
 }
 
 /* 🎮 霓虹標題 */
-h1 {
+h1,h2,h3 {
+    font-size: 18px;
     color: #FF007F;
     padding: 15px;
     border: 4px solid #FF007F;
