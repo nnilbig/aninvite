@@ -34,15 +34,14 @@ document.addEventListener("DOMContentLoaded", async function () {
     const registeredList = document.getElementById("registered-list");
     const countSpan = document.getElementById("count");
 
-    // 🎮 顯示載入畫面
     function showLoading() {
-        document.getElementById("loading-overlay").style.display = "flex";
+        document.getElementById("loading-overlay").classList.add("active");
+    }
+    
+    function hideLoading() {
+        document.getElementById("loading-overlay").classList.remove("active");
     }
 
-    // 🎮 隱藏載入畫面
-    function hideLoading() {
-        document.getElementById("loading-overlay").style.display = "none";
-    }
 
     // 🎮 獲取已報名者的函數
     async function fetchRegisteredUsers() {
