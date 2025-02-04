@@ -36,12 +36,10 @@ document.addEventListener("DOMContentLoaded", async function () {
 
     function showLoading() {
         document.getElementById('loading-overlay').classList.add('active');
-        document.body.classList.add('loading-active'); // 禁止滾動
     }
     
     function hideLoading() {
         document.getElementById('loading-overlay').classList.remove('active');
-        document.body.classList.remove('loading-active'); // 恢復滾動
     }
 
     // 🎮 獲取已報名者的函數
